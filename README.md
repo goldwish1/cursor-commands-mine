@@ -53,12 +53,15 @@ Cursor Commands 是可复用的 AI 提示词，以 Markdown 文件形式保存�
     ├── code-review.md
     ├── create-pr.md
     ├── deslop.md
+    ├── pr.md
     ├── docker-logs.md
     ├── database-migration.md
     ├── debug-issue.md
+    ├── debug.md
     ├── diagrams.md
     ├── fix-compile-errors.md
     ├── fix-git-issues.md
+    ├── funtion.md
     ├── generate-api-docs.md
     ├── generate-pr-description.md
     ├── git-commit.md
@@ -75,6 +78,7 @@ Cursor Commands 是可复用的 AI 提示词，以 Markdown 文件形式保存�
     ├── security-audit.md
     ├── security-review.md
     ├── setup-new-feature.md
+    ├── think.md
     ├── visualize.md
     └── write-unit-tests.md
 ```
@@ -130,6 +134,13 @@ Cursor Commands 是可复用的 AI 提示词，以 Markdown 文件形式保存�
 
 - `git-commit.md` – 创建结构良好的提交消息，可选择链接问题键
 - `git-push.md` – 在推送前检查后将更改推送到远程
+
+### 自定义
+
+- `pr.md` – 提交并推送更改，根据分支自动决定是否创建 Pull Request
+- `funtion.md` – 复述需求理解，制定方案并实现功能
+- `debug.md` – 分析代码问题原因并提出解决方案
+- `think.md` – 审查代码问题并提出三个最可靠的解决方案
 
 ## 快速开始
 
