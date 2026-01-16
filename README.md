@@ -1,52 +1,46 @@
 # Cursor Commands
 
-⭐ **Featured by [Cursor](https://x.com/ericzakariasson/status/1973932448200413539)**
+⭐ **由 [Cursor](https://x.com/ericzakariasson/status/1973932448200413539) 推荐**
 
-A curated collection of Cursor slash-command prompts that give your team
-reusable, version-controlled AI workflows directly inside the Cursor IDE.
+一个精选的 Cursor 斜杠命令提示词集合，为您的团队提供可在 Cursor IDE 中直接使用的可复用、版本控制的 AI 工作流。
 
-🔗 Also check out [Cursor Hooks](https://github.com/hamzafer/cursor-hooks) - that runs after every file edit
+🔗 同时查看 [Cursor Hooks](https://github.com/hamzafer/cursor-hooks) - 在每次文件编辑后运行
 
-## What are Cursor Commands?
+## 什么是 Cursor Commands？
 
-Cursor Commands are reusable AI prompts saved as Markdown files in
-`.cursor/commands/`. When you type `/` in Cursor's chat input, the IDE lists
-every command from your project and your global library so you can insert the
-prompt instantly. They act like AI-driven shortcuts that automate repetitive
-tasks, reinforce team standards, and keep feedback consistent.
+Cursor Commands 是可复用的 AI 提示词，以 Markdown 文件形式保存在 `.cursor/commands/` 目录中。当您在 Cursor 的聊天输入框中输入 `/` 时，IDE 会列出项目中和全局库中的每个命令，以便您立即插入提示词。它们就像 AI 驱动的快捷方式，可以自动化重复性任务，强化团队标准，并保持反馈的一致性。
 
-## Features
+## 功能特性
 
-- **🚀 Quick access**: Type `/` to surface every command without leaving your flow
-- **🔄 Reusable**: Standardize prompts for common tasks across the whole team
-- **👥 Shareable**: Store commands in git so they ship with your repository
-- **🎯 Focused**: Each command targets a specific workflow with clear structure
-- **📝 Customizable**: Edit or extend the Markdown files to match your processes
+- **🚀 快速访问**：输入 `/` 即可显示所有命令，无需离开您的工作流程
+- **🔄 可复用**：为整个团队的常见任务标准化提示词
+- **👥 可共享**：将命令存储在 git 中，以便它们随您的仓库一起发布
+- **🎯 聚焦**：每个命令都针对具有清晰结构的特定工作流
+- **📝 可定制**：编辑或扩展 Markdown 文件以匹配您的流程
 
-## How commands work
+## 命令的工作原理
 
-Commands can live in two places:
+命令可以存在于两个位置：
 
-- Project commands: Store Markdown files in `.cursor/commands` inside your repository
-- Global commands: Store personal commands in `~/.cursor/commands` on your machine
+- **项目命令**：在仓库内的 `.cursor/commands` 中存储 Markdown 文件
+- **全局命令**：在您机器上的 `~/.cursor/commands` 中存储个人命令
 
-Cursor automatically scans both directories when you type `/`, combines the
-results, and inserts the selected command into the chat ready to run.
+当您输入 `/` 时，Cursor 会自动扫描这两个目录，合并结果，并将选定的命令插入到聊天中，准备运行。
 
-## How to use
+## 如何使用
 
-1. Type `/` in Cursor's AI chat or agent input
-2. Select from the available commands
-3. Let the AI execute the prompt with the relevant project context
+1. 在 Cursor 的 AI 聊天或代理输入框中输入 `/`
+2. 从可用命令中选择
+3. 让 AI 在相关的项目上下文中执行提示词
 
-## Creating commands
+## 创建命令
 
-- Create a `.cursor/commands` directory in your project root
-- Add `.md` files with descriptive names (for example, `code-review.md`, `run-all-tests-and-fix.md`)
-- Write clear Markdown instructions describing what the command should accomplish
-- Open Cursor, type `/`, and choose your new command to execute it immediately
+- 在项目根目录创建 `.cursor/commands` 目录
+- 添加具有描述性名称的 `.md` 文件（例如，`code-review.md`、`run-all-tests-and-fix.md`）
+- 编写清晰的 Markdown 说明，描述命令应完成的任务
+- 打开 Cursor，输入 `/`，选择您的新命令即可立即执行
 
-Example structure:
+示例结构：
 
 ```text
 .cursor/
@@ -85,162 +79,162 @@ Example structure:
     └── write-unit-tests.md
 ```
 
-## Available commands
+## 可用命令
 
-### Code quality & maintenance
+### 代码质量与维护
 
-- `lint-fix.md` – Automatically analyze and fix linting issues in the current file
-- `lint-suite.md` – Run project linters, apply fixes, and ensure codebase meets formatting requirements
-- `refactor-code.md` – Improve code quality while maintaining functionality
-- `optimize-performance.md` – Analyze and optimize code performance
-- `add-error-handling.md` – Implement comprehensive error handling across the change set
-- `deslop.md` – Clean up AI-generated code by removing unnecessary complexity and verbosity
-- `clarify-task.md` – Break down ambiguous tasks into clear, actionable steps
+- `lint-fix.md` – 自动分析并修复当前文件中的 linting 问题
+- `lint-suite.md` – 运行项目 linter，应用修复，确保代码库满足格式要求
+- `refactor-code.md` – 在保持功能的同时提高代码质量
+- `optimize-performance.md` – 分析并优化代码性能
+- `add-error-handling.md` – 在整个变更集中实现全面的错误处理
+- `deslop.md` – 通过移除不必要的复杂性和冗余来清理 AI 生成的代码
+- `clarify-task.md` – 将模糊的任务分解为清晰、可操作的步骤
 
-### Review & collaboration
+### 审查与协作
 
-- `code-review.md` – Comprehensive review checklist with structured steps and focus areas
-- `address-github-pr-comments.md` – Process reviewer feedback and craft thoughtful responses
-- `light-review-existing-diffs.md` – Quick pass to highlight risky diffs and cleanup items
-- `create-pr.md` – Prepare a well-structured pull request with validation checklist
-- `generate-pr-description.md` – Draft detailed pull-request descriptions automatically
+- `code-review.md` – 具有结构化步骤和重点领域的全面审查清单
+- `address-github-pr-comments.md` – 处理审查者反馈并制定周到的回复
+- `light-review-existing-diffs.md` – 快速检查以突出显示有风险的差异和清理项
+- `create-pr.md` – 准备结构良好的拉取请求，包含验证清单
+- `generate-pr-description.md` – 自动生成详细的拉取请求描述
 
-### Testing & reliability
+### 测试与可靠性
 
-- `run-all-tests-and-fix.md` – Execute the full suite, triage failures, and confirm fixes
-- `write-unit-tests.md` – Generate focused unit tests with proper coverage
-- `debug-issue.md` – Step-by-step debugging workflow for isolating defects
-- `fix-compile-errors.md` – Diagnose and resolve compilation failures quickly
-- `docker-logs.md` – Tail and monitor Docker container logs for debugging
+- `run-all-tests-and-fix.md` – 执行完整测试套件，分类失败并确认修复
+- `write-unit-tests.md` – 生成具有适当覆盖率的聚焦单元测试
+- `debug-issue.md` – 用于隔离缺陷的分步调试工作流
+- `fix-compile-errors.md` – 快速诊断并解决编译失败
+- `docker-logs.md` – 跟踪和监控 Docker 容器日志以进行调试
 
-### Documentation & onboarding
+### 文档与入职
 
-- `add-documentation.md` – Capture comprehensive product or code documentation
-- `generate-api-docs.md` – Produce rich API documentation with schemas and examples
-- `onboard-new-developer.md` – Checklist-driven onboarding for new teammates
-- `setup-new-feature.md` – Plan requirements, branching, and architecture for new work
-- `visualize.md` – Generate visual diagrams and flowcharts from code or concepts
-- `diagrams.md` – Generate Mermaid diagrams (flowcharts, sequence, class, ER, state diagrams)
-- `overview.md` – Generate Mermaid diagrams for user journey and architecture flow
-- `roadmap.md` – Analyze codebase and generate visual feature roadmaps
+- `add-documentation.md` – 捕获全面的产品或代码文档
+- `generate-api-docs.md` – 生成包含模式和示例的丰富 API 文档
+- `onboard-new-developer.md` – 为新队友提供清单驱动的入职流程
+- `setup-new-feature.md` – 为新工作规划需求、分支和架构
+- `visualize.md` – 从代码或概念生成可视化图表和流程图
+- `diagrams.md` – 生成 Mermaid 图表（流程图、序列图、类图、ER 图、状态图）
+- `overview.md` – 为用户旅程和架构流程生成 Mermaid 图表
+- `roadmap.md` – 分析代码库并生成可视化功能路线图
 
-### Security, accessibility & infrastructure
+### 安全性、可访问性与基础设施
 
-- `security-audit.md` – Structured security checklist for code changes
-- `security-review.md` – Broader vulnerability and risk assessment workflow
-- `accessibility-audit.md` – Review for WCAG compliance issues
-- `database-migration.md` – Plan, create, and validate database migrations with rollbacks
-- `fix-git-issues.md` – Resolve merge conflicts and repository problems safely
+- `security-audit.md` – 用于代码变更的结构化安全检查清单
+- `security-review.md` – 更广泛的漏洞和风险评估工作流
+- `accessibility-audit.md` – 审查 WCAG 合规性问题
+- `database-migration.md` – 规划、创建和验证数据库迁移，包含回滚
+- `fix-git-issues.md` – 安全地解决合并冲突和仓库问题
 
-### Git workflow
+### Git 工作流
 
-- `git-commit.md` – Create well-structured commit messages with optional issue key linking
-- `git-push.md` – Push changes to remote with pre-push checks
+- `git-commit.md` – 创建结构良好的提交消息，可选择链接问题键
+- `git-push.md` – 在推送前检查后将更改推送到远程
 
-## Quick start
+## 快速开始
 
-1. Clone this repository or copy the `.cursor/commands/` directory into your project
-2. Open the project in Cursor IDE
-3. Type `/` in the AI chat to browse available commands
-4. Select a command and let Cursor execute the prompt with your code context
+1. 克隆此仓库或将 `.cursor/commands/` 目录复制到您的项目中
+2. 在 Cursor IDE 中打开项目
+3. 在 AI 聊天中输入 `/` 以浏览可用命令
+4. 选择一个命令，让 Cursor 在您的代码上下文中执行提示词
 
-## Installation options
+## 安装选项
 
 ```bash
-# Option 1: clone the repository
+# 选项 1：克隆仓库
 git clone https://github.com/hamzafer/cursor-commands.git
 cd cursor-commands
 ```
 
 ```bash
-# Option 2: copy commands into an existing project
+# 选项 2：将命令复制到现有项目中
 cp -r cursor-commands/.cursor /path/to/your/project/
 ```
 
-Alternatively, create the directory manually:
+或者，手动创建目录：
 
-1. Create `.cursor/commands/` in your project root
-2. Copy or author the Markdown command files you need
+1. 在项目根目录创建 `.cursor/commands/`
+2. 复制或编写您需要的 Markdown 命令文件
 
-## Writing your own commands
+## 编写您自己的命令
 
-Use the existing files as templates or start from scratch:
+使用现有文件作为模板或从头开始：
 
 ```bash
 touch .cursor/commands/my-custom-command.md
 ```
 
 ```markdown
-# My Custom Command
+# 我的自定义命令
 
-Brief description of what this command does.
+简要描述此命令的作用。
 
-## Objective
-Detailed explanation of the task and expected outcome.
+## 目标
+详细说明任务和预期结果。
 
-## Requirements
-- Specific requirements or constraints
-- Coding standards to follow
-- Expected formats or structures
+## 要求
+- 特定要求或约束
+- 要遵循的编码标准
+- 预期格式或结构
 
-## Output
-Description of what the AI should produce.
+## 输出
+描述 AI 应产生的内容。
 
-Provide clear instructions for the AI to follow.
+为 AI 提供清晰的说明。
 ```
 
-## Example prompts
+## 示例提示词
 
 ```markdown
-# Generate API Documentation
+# 生成 API 文档
 
-Create comprehensive API documentation for the current code. Include:
+为当前代码创建全面的 API 文档。包括：
 
-- Endpoint descriptions and HTTP methods
-- Request/response schemas with examples
-- Authentication requirements
-- Error codes and responses
-- Rate limiting information
+- 端点描述和 HTTP 方法
+- 带有示例的请求/响应模式
+- 身份验证要求
+- 错误代码和响应
+- 速率限制信息
 
-Format as OpenAPI/Swagger specification.
+格式化为 OpenAPI/Swagger 规范。
 ```
 
 ```markdown
-# Security Audit
+# 安全审计
 
-Perform a security audit of the current code. Check for:
+对当前代码执行安全审计。检查：
 
-- SQL injection vulnerabilities
-- XSS attack vectors
-- Authentication and authorization issues
-- Input validation problems
-- Sensitive data exposure
+- SQL 注入漏洞
+- XSS 攻击向量
+- 身份验证和授权问题
+- 输入验证问题
+- 敏感数据暴露
 
-Provide specific remediation steps for each issue found.
+为发现的每个问题提供具体的修复步骤。
 ```
 
-## Best practices
+## 最佳实践
 
-- **Be specific**: Describe the expected outcome and acceptance criteria
-- **Provide context**: Reference project conventions, architecture, or standards
-- **Set boundaries**: Clarify scope, assumptions, and tooling limits
-- **Include examples**: Show expected formats or responses when helpful
-- **Stay focused**: Keep each command targeted to a single, clear objective
-- **Review together**: Treat command changes like code changes and review in PRs
-- **Use descriptive names**: Make filenames reflect the command's purpose
+- **具体明确**：描述预期结果和验收标准
+- **提供上下文**：参考项目约定、架构或标准
+- **设定边界**：明确范围、假设和工具限制
+- **包含示例**：在有用时显示预期格式或响应
+- **保持专注**：让每个命令都针对单一、清晰的目标
+- **共同审查**：将命令更改视为代码更改，在 PR 中审查
+- **使用描述性名称**：使文件名反映命令的用途
 
-## References
+## 参考资料
 
-- [Changelog – v1.6](https://cursor.com/changelog)
-- [Docs – Custom Slash Commands](https://cursor.com/docs/agent/chat/commands)
-- [Announcement Post 1](https://x.com/cursor_ai/status/1967990959645528195)
-- [Announcement Post 2](https://x.com/cursor_ai/status/1970185277923615188)
+- [更新日志 – v1.6](https://cursor.com/changelog)
+- [文档 – 自定义斜杠命令](https://cursor.com/docs/agent/chat/commands)
+- [公告帖子 1](https://x.com/cursor_ai/status/1967990959645528195)
+- [公告帖子 2](https://x.com/cursor_ai/status/1970185277923615188)
 
-## Support
+## 支持
 
-- Open an [issue](https://github.com/hamzafer/cursor-commands/issues) for feedback or requests
-- Refer to this README for the command index that ships with the prompts
+- 打开 [issue](https://github.com/hamzafer/cursor-commands/issues) 提供反馈或请求
+- 参考此 README 了解随提示词一起提供的命令索引
 
-## License
+## 许可证
 
-This project is open source and available under the [MIT License](LICENSE).
+此项目是开源的，可在 [MIT 许可证](LICENSE) 下使用。
